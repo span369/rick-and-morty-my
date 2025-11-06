@@ -1,0 +1,49 @@
+<section class="filter">
+    <div class="filter__container container">
+        <div class="filter__div">
+            <div class="filter__search-div">
+                <p class="filter__text">Name</p>
+                <div class="filter__input-btn">
+                    <input class="filter__input" type="text" placeholder="Enter name">
+                    <button class="filter__search-btn">
+                        <img class="filter__search-img" src="./img/characters/search-filter.webp" alt="search-button">
+                    </button>
+                </div>
+            </div>
+            <div class="filter__select-episode">
+                <div class="filter__select-episode1">
+                    <p class="filter__text">Episode code</p>
+                    <select class="filter__select" placeholder="All seasons" name="eeeeee" id="">
+                        <option value="All seasons">All seasons</option>
+                        <option value="1st season">1st season</option>
+                        <option value="2nd season">2nd season</option>
+                        <option value="3rd season">3rd season</option>
+                        <option value="4th season">4th season</option>
+                        <option value="5th season">5th season</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <ul class="filter__list"></ul>
+         <div class="not-found">
+            <picture class="not-found__img">
+                    <source
+                        srcset="./img/component-images/desktop/not-found-PC.webp 1x,
+                                ./img/component-images/desktop/not-found-PC-2x.webp 2x"
+                        media="(min-width: 1360px)" />
+                    <source
+                        srcset="./img/component-images/tablet/not-found-Tablet.webp 1x,
+                                ./img/component-images/tablet/not-found-Tablet-2x.webp 2x"
+                        media="(min-width: 768px)" />
+                    <source
+                        srcset="./img/component-images/mobile/not-found-Mobile.webp 1x,
+                                ./img/component-images/mobile/not-found-Mobile-2x.webp 2x"
+                        media="(min-width: 320px)" />
+                    <img class="hero__image" src="./img/component-images/desktop/not-found-PC.webp" alt="not found image" />
+                </picture>
+                <p class='not-found__text'>Oops! Try looking for something else...</p>
+        </div>
+        <button class="filter__load" type="button">Load more</button>
+    </div>
+</section>
+

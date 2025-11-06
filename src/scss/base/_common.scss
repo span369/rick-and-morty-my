@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fafafa;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+
+    @media screen and (min-width: 768px){
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1360px){
+        width: 100%;
+    }
+}
+
+.black-background {
+    width: 330px;
+    height: 780px;
+    background-color: #0D171D;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+
+    @media screen and (min-width: 375px){
+        width: 375px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 768px;
+        height: 768px;
+    }
+
+    @media screen and (min-width: 1360px){
+        width: 1440px;
+        height: 803px;
+    }
+}
+
+.black-background-main {
+    width: 330px;
+    height: 780px;
+    background-color: #0D171D;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+
+    @media screen and (min-width: 375px){
+        width: 375px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 768px;
+        height: 960px;
+    }
+
+    @media screen and (min-width: 1360px){
+        width: 1440px;
+        height: 923px;
+    }
+}
+
+// section, header, footer {
+//     outline: solid green;
+// }
+
+
+input {
+    color: none;
+}
+
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 auto;
+    max-width: 335px;
+    width: 100%;
+    overflow-x: hidden;
+
+    @media screen and (min-width: 768px){
+        overflow: inherit;
+        max-width: 704px;
+    }
+
+    @media screen and (min-width: 1360px){
+        max-width: 1184px;
+    }
+}

@@ -1,12 +1,12 @@
 {
-  "name": "rick-and-morty-vanilla-js",
+  "name": "rick-and-morty-my",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tate-t.github.io/rick-and-morty-vanilla-js/",
+  "homepage": "https://tate-t.github.io/rick-and-morty-my/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/rick-and-morty-vanilla-js/",
+    "build": "vite build --base=/rick-and-morty-my/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"

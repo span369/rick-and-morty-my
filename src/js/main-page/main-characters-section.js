@@ -3,6 +3,7 @@ import { getCharacter, getCharacters, getLocation, getEpisode } from 'rickmortya
 export function initMainCharacters() {
   const img = document.getElementById('character-img');
   const characters = document.querySelectorAll('.main-characters__character');
+  const charactersImageBackground = document.querySelector('.main-characters__image');
 
   // function loadCharacterImage(name) {
   //   fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
@@ -39,11 +40,32 @@ export function initMainCharacters() {
       // if (id === 5) img.src = "../../img/mainpage-images/jerry-smith-1x.png";
       //! ❌ Так зображення є в localhost та на GitHub
       //todo:    new URL("../images/picture.jpg", import.meta.url).href;
-      if (id === 1) img.src = new URL("../../img/mainpage-images/rick-sanchez-1x.png", import.meta.url).href;
-      if (id === 2) img.src = new URL("../../img/mainpage-images/morty-smith-1x.png", import.meta.url).href;
-      if (id === 3) img.src = new URL("../../img/mainpage-images/summer-smith-1x.png", import.meta.url).href;
-      if (id === 4) img.src = new URL("../../img/mainpage-images/beth-smith-1x.png", import.meta.url).href;
-      if (id === 5) img.src = new URL("../../img/mainpage-images/jerry-smith-1x.png", import.meta.url).href;
+      // background: #b8f02f;
+      // background: #0D171D;
+      // background: #DAF836;
+      // background: #A1D737;
+      // background: #0D171D;
+      if (id === 1) {
+        img.src = new URL("../../img/mainpage-images/rick-sanchez-1x.png", import.meta.url).href;
+        charactersImageBackground.style.backgroundColor = "#b8f02f";
+      };
+      if (id === 2) {
+        img.src = new URL("../../img/mainpage-images/morty-smith-1x.png", import.meta.url).href;
+        charactersImageBackground.style.backgroundColor = "#0D171D";
+      };
+      if (id === 3) { 
+        img.src = new URL("../../img/mainpage-images/summer-smith-1x.png", import.meta.url).href;
+        charactersImageBackground.style.backgroundColor = "#DAF836";
+      };
+      if (id === 4) { 
+        img.src = new URL("../../img/mainpage-images/beth-smith-1x.png", import.meta.url).href;
+        icharactersImageBackgroundmg.style.backgroundColor = "#A1D737";
+      };
+      if (id === 5) { 
+        img.src = new URL("../../img/mainpage-images/jerry-smith-1x.png", import.meta.url).href;
+        charactersImageBackground.style.backgroundColor = "#0D171D";
+      };
+
       img.alt = response.data.name;
     };
   };

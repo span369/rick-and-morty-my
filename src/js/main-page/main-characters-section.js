@@ -59,7 +59,7 @@ export function initMainCharacters() {
       };
       if (id === 4) { 
         img.src = new URL("../../img/mainpage-images/beth-smith-1x.png", import.meta.url).href;
-        icharactersImageBackgroundmg.style.backgroundColor = "#A1D737";
+        charactersImageBackground.style.backgroundColor = "#A1D737";
       };
       if (id === 5) { 
         img.src = new URL("../../img/mainpage-images/jerry-smith-1x.png", import.meta.url).href;
